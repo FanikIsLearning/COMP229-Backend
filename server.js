@@ -89,8 +89,7 @@ app.use(cors(corsOptions));*/
 app.use(
   cors({
     credentials: true,
-    //origin: ["http://localhost:8081"],
-    origin: ["https://main--grocery-fresh.netlify.app"],
+    origin: ["http://localhost:8081"],
   })
 );
 
@@ -115,7 +114,7 @@ app.use(
 // simple route
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Fresh application." });
+  res.json({ message: "Welcome to Ivan application." });
 });
 
 require("./app/routes/auth.routes")(app);
