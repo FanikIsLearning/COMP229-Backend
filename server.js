@@ -90,7 +90,7 @@ app.use(
   cors({
     credentials: true,
     //origin: ["http://localhost:8081"],
-    origin: ["https://grocery-fresh.netlify.app/"],
+    origin: ["https://main--grocery-fresh.netlify.app"],
   })
 );
 
